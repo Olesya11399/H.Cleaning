@@ -5,6 +5,7 @@ header.header
 
 
 
+
                 i.fa.fa-map-marker(aria-hidden="true")
                 span.contact__text 333, Road Broken Street, 88 New York
 
@@ -12,5 +13,29 @@ header.header
                     i.fa.fa-phone(aria-hidden="true")
                     span.contact__text  1 785 452 4521
 
+                i.fa.fa-clock-o(aria-hidden="true")
+                span.contact__text Mon-Sat 8.00am-6.00pm
 
-    .header__bottom
+                a.twitter-icon(href="https://twitter.com/")
+                    i.fa.fa-twitter(aria-hidden="true")
+
+                a.facebook-icon(href="https://www.facebook.com/")
+                    i.fa.fa-facebook(aria-hidden="true")
+
+                a.youtube-icon(href="https://www.youtube.com/")
+                    i.fa.fa-youtube-play(aria-hidden="true")
+
+                a.google-icon(href="https://www.google.com/")
+                    i.fa.fa-google-plus(aria-hidden="true")
+
+    .container
+        .header__bottom
+            .logo: img.logo__picture(src="images/logo.png" alt="picture")
+            nav.nav
+            - const items = ['Home','About Us', 'Services','Projects','Blog','Contact']
+                each item in items
+                    if item === 'Home'
+                        a.nav__link.nav__link--active(href="#")=item
+                    else
+                        a.nav__link(href="#")=item
+            a.button.header__button.button--orange(href="#") Free Consultation
