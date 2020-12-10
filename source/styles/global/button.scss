@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   border-radius: 3px;
-  padding: 10px 22px 7px;
+  padding: 15px 30px 13px;
   text-decoration: none;
 
   &--orange {
@@ -12,9 +12,5 @@
     &:hover {
       background: lighten(orange, 7%);
     }
-  }
-
-  &--text-uppercase {
-    text-transform: uppercase;
   }
 }

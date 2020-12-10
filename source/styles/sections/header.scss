@@ -1,6 +1,7 @@
 .header {
   &__top {
     background-color: #1175b7;
+
   }
   &__bottom {
   display: flex;
@@ -10,14 +11,17 @@
   padding: 20px 0 20px
   }
 }
-
+.contact__icon{
+  text-align: right;
+}
 
 .contacts {
-
+  font-size: 0.9rem;
   color: #fff;
 
   .contact {
     text-align: left;
+
     display: inline-block;
     vertical-align: middle;
     padding: 10px 10px 8px;
@@ -49,6 +53,6 @@
   }
 }
     .twitter-icon{
-      margin-left: 110px;
+      margin-left: 180px;
     }
 }
