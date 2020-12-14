@@ -1,0 +1,21 @@
+project.project
+    .container
+        .text
+            h1 Our Project
+            h3 Our company is latest at cleaning servicing company. We can clean your space including home.
+            hr
+        .nav
+            - const projects = ['All Project','House', 'Office','Garden','Apartment']
+            each project in projects
+                if item === 'House'
+                    a.nav__link.new.link__active(href="#")=project
+                else
+                    a.nav__link.new(href="#")=project
+        .photo
+            img.b(src="images/project_1.png" alt="picture")
+            img.rl(src="images/project_2.png" alt="picture")
+            img.b(src="images/project_3.png" alt="picture")
+            img.b(src="images/project_4.png" alt="picture")
+            img.rl(src="images/project_5.png" alt="picture")
+            img.b(src="images/project_6.png" alt="picture")
+

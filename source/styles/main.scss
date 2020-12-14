@@ -2,6 +2,7 @@
 @import "../../node_modules/normalize.scss/normalize";
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
+@import "global/mixins";
 @import "global/fonts";
 @import "global/vars";
 @import "global/common";
@@ -9,9 +10,12 @@
 @import "global/sprite";
 @import "global/button";
 
+
 @import "sections/header";
 @import "sections/nav";
 @import "sections/hero";
 @import "sections/aboutus";
 @import "sections/services";
 @import "sections/overview";
+@import "sections/chooseus";
+@import "sections/project";
