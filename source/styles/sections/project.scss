@@ -1,6 +1,7 @@
 .project{
   .container {
     text-align: center;
+
   }
   .text{
     padding: 20px 280px 20px 280px;
@@ -14,27 +15,35 @@
   }
   .photo{
       padding: 0;
+    margin-bottom: 70px;
     }
 
   img{
   position: relative;
-  }
-  .b{
-    margin-bottom: 0;
+  margin: 10px;
+
 
   }
 
-  .rl{
-    margin: 30px 30px 0 30px;
-  }
 
  .new{
    color:#414141;
+  margin-bottom: 25px;
 
  }
 
   .link__active{
     background-color: orange;
     color: #fff;
+    border-radius: 3px;
+    &:hover{
+      color: #fff;
+    }
+  }
+
+  .inactive{
+    &:hover{
+      color: orange;
+    }
   }
 }

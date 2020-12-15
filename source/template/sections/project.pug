@@ -1,4 +1,4 @@
-project.project
+section.project
     .container
         .text
             h1 Our Project
@@ -7,15 +7,15 @@ project.project
         .nav
             - const projects = ['All Project','House', 'Office','Garden','Apartment']
             each project in projects
-                if item === 'House'
+                if project === 'All Project'
                     a.nav__link.new.link__active(href="#")=project
                 else
-                    a.nav__link.new(href="#")=project
+                    a.nav__link.new.inactive(href="#")=project
         .photo
-            img.b(src="images/project_1.png" alt="picture")
-            img.rl(src="images/project_2.png" alt="picture")
-            img.b(src="images/project_3.png" alt="picture")
-            img.b(src="images/project_4.png" alt="picture")
-            img.rl(src="images/project_5.png" alt="picture")
-            img.b(src="images/project_6.png" alt="picture")
+            img(src="images/project_1.png" alt="picture")
+            img(src="images/project_2.png" alt="picture")
+            img(src="images/project_3.png" alt="picture")
+            img(src="images/project_4.png" alt="picture")
+            img(src="images/project_5.png" alt="picture")
+            img(src="images/project_6.png" alt="picture")
 
